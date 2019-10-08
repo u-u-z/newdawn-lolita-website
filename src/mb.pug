@@ -9,13 +9,13 @@ block mobile
         nav
           .px-5.py-6.flex.items-center.justify-between.flex-wrap.bg-black.text-white
             p.text-2xl 新昼·NEW DAWN
-            .w-6
+            #mbmenubutton.w-6
               <svg t="1570516705389" class="icon" viewBox="0 0 1249 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2490" >
                 <path d="M1186.816 124.928H62.464C27.648 124.928 0 97.28 0 62.464S27.648 0 62.464 0h1124.352c33.792 0 62.464 27.648 62.464 62.464s-28.672 62.464-62.464 62.464z m0 449.536H62.464C27.648 574.464 0 546.816 0 512s27.648-62.464 62.464-62.464h1124.352c33.792 0 62.464 27.648 62.464 62.464s-28.672 62.464-62.464 62.464z m0 449.536H62.464C27.648 1024 0 996.352 0 961.536s27.648-62.464 62.464-62.464h1124.352c33.792 0 62.464 27.648 62.464 62.464S1220.608 1024 1186.816 1024z" p-id="2491" fill="#ffffff"></path>
               </svg>
-          div(class="flex flex-wrap bg-black py-3 absolute top-8")
+          #mbmenu.flex.flex-wrap.bg-black.py-3.absolute.top-8.w-full.max-w-xl.px-5
             each item in [ ['首页','/'], ['新闻','/'], ['关于','/'], ['详情','/'], ['我要报名！','/']]
-              a(href=item[1] class=["w-full","flex","mx-5","py-2","border-b","border-white","bg-black","text-white","hover:bg-white","hover:text-black"])= item[0]
+              a(href=item[1] class=["w-full","flex","py-2","border-b","border-white","bg-black","text-white","hover:bg-white","hover:text-black"])= item[0]
         div(class="px-10 py-16" style="height: 87%;")
           div(class="h-full rounded-lg border-2 border-black flex flex-col items-center justify-center" style="background:rgba(200, 200, 200, 0.4);")
             .flex
@@ -27,3 +27,5 @@ block mobile
             .flex.h-16
             .flex
               button.rounded-lg.border.border-black.px-4.py-1 我要报名
+
+  
