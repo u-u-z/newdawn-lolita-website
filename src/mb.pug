@@ -3,16 +3,27 @@ extends _layouts/base
 include _modules/link/link
 
 block mobile
-  .bg-gray-500
-    .justify-center.h-screen.max-w-xl.mx-auto.bg-gray-400
-      nav
-        .px-5.py-6.flex.items-center.justify-between.flex-wrap.bg-black.text-white
-          p.text-2xl 新昼·NEW DAWN
-          .w-6
-            <svg t="1570516705389" class="icon" viewBox="0 0 1249 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2490" >
-              <path d="M1186.816 124.928H62.464C27.648 124.928 0 97.28 0 62.464S27.648 0 62.464 0h1124.352c33.792 0 62.464 27.648 62.464 62.464s-28.672 62.464-62.464 62.464z m0 449.536H62.464C27.648 574.464 0 546.816 0 512s27.648-62.464 62.464-62.464h1124.352c33.792 0 62.464 27.648 62.464 62.464s-28.672 62.464-62.464 62.464z m0 449.536H62.464C27.648 1024 0 996.352 0 961.536s27.648-62.464 62.464-62.464h1124.352c33.792 0 62.464 27.648 62.464 62.464S1220.608 1024 1186.816 1024z" p-id="2491" fill="#ffffff"></path>
-            </svg>
-        div(class="flex flex-wrap bg-black py-3 hidden")
-          each item in [ ['首页','/'], ['新闻','/'], ['关于','/'], ['详情','/'], ['我要报名！','/']]
-            a(href=item[1] class=["w-full","flex","mx-8","py-2","border-b","border-white","bg-black","text-white","hover:bg-white","hover:text-black"])= item[0]
-      
+  div(style="background:#E5E5E5 ;")
+    div(class="bg-no-repeat h-screen bg-right-bottom" style="background-image: url(images/bg-img-mb.png);background-size: 70%")
+      .h-full.justify-center.max-w-xl.mx-auto
+        nav
+          .px-5.py-6.flex.items-center.justify-between.flex-wrap.bg-black.text-white
+            p.text-2xl 新昼·NEW DAWN
+            .w-6
+              <svg t="1570516705389" class="icon" viewBox="0 0 1249 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2490" >
+                <path d="M1186.816 124.928H62.464C27.648 124.928 0 97.28 0 62.464S27.648 0 62.464 0h1124.352c33.792 0 62.464 27.648 62.464 62.464s-28.672 62.464-62.464 62.464z m0 449.536H62.464C27.648 574.464 0 546.816 0 512s27.648-62.464 62.464-62.464h1124.352c33.792 0 62.464 27.648 62.464 62.464s-28.672 62.464-62.464 62.464z m0 449.536H62.464C27.648 1024 0 996.352 0 961.536s27.648-62.464 62.464-62.464h1124.352c33.792 0 62.464 27.648 62.464 62.464S1220.608 1024 1186.816 1024z" p-id="2491" fill="#ffffff"></path>
+              </svg>
+          div(class="flex flex-wrap bg-black py-3 absolute top-8")
+            each item in [ ['首页','/'], ['新闻','/'], ['关于','/'], ['详情','/'], ['我要报名！','/']]
+              a(href=item[1] class=["w-full","flex","mx-5","py-2","border-b","border-white","bg-black","text-white","hover:bg-white","hover:text-black"])= item[0]
+        div(class="px-10 py-16" style="height: 87%;")
+          div(class="h-full rounded-lg border-2 border-black flex flex-col items-center justify-center" style="background:rgba(200, 200, 200, 0.4);")
+            .flex
+              h1(class="flex-1 text-4xl border-t-2 border-b-2 border-black .justify-end") Lolita 茶话会
+            .flex.h-48
+            .flex.flex-col.justify-end
+              p 2019 年 10 月 26日
+              p 哈尔滨伯爵大酒店
+            .flex.h-16
+            .flex
+              button.rounded-lg.border.border-black.px-4.py-1 我要报名
