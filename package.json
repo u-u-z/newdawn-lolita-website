@@ -2,6 +2,7 @@
   "name": "sample",
   "version": "0.0.1",
   "dependencies": {
+    "animate.css": "^3.7.2",
     "jquery": "~3.4.1",
     "normalize.css": "~8.0.1",
     "tailwindcss": "^1.1.2"
