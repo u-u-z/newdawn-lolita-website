@@ -7,6 +7,9 @@
 
 @tailwind utilities;
 
+*{
+  font-family: serif;
+}
 
 /* Import Modules */
 @import '../_modules/link/link';
