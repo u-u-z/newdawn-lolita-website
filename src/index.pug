@@ -14,7 +14,7 @@ block content
                 <path d="M1186.816 124.928H62.464C27.648 124.928 0 97.28 0 62.464S27.648 0 62.464 0h1124.352c33.792 0 62.464 27.648 62.464 62.464s-28.672 62.464-62.464 62.464z m0 449.536H62.464C27.648 574.464 0 546.816 0 512s27.648-62.464 62.464-62.464h1124.352c33.792 0 62.464 27.648 62.464 62.464s-28.672 62.464-62.464 62.464z m0 449.536H62.464C27.648 1024 0 996.352 0 961.536s27.648-62.464 62.464-62.464h1124.352c33.792 0 62.464 27.648 62.464 62.464S1220.608 1024 1186.816 1024z" p-id="2491" fill="#ffffff"></path>
               </svg>
           #mbmenu.flex.flex-wrap.bg-black.py-3.absolute.top-8.w-full.max-w-xl.px-5.hidden
-            each item in [ ['首页','/'], ['新闻','/'], ['关于','/'], ['详情','/'], ['我要报名！','/']]
+            each item in [ ['首页','/'], ['微博','https://weibo.com/7225229817'], ['关于','https://weibo.com/7225229817/about'], ['详情','https://weibo.com/7225229817/IaBDMtaWr?from=page_1006067225229817_profile&wvr=6&mod=weibotime&type=comment#_rnd1570632397262'], ['我要报名！','https://wx.duohui.co/event/8858']]
               a(href=item[1] class=["w-full","flex","py-2","border-b","border-white","bg-black","text-white","hover:bg-white","hover:text-black"])= item[0]
         div(class="px-10 py-10" style="height: 87%;")
           div(class="h-full rounded-lg border-2 border-black flex flex-col items-center justify-center" style="background:rgba(200, 200, 200, 0.4);")
@@ -26,7 +26,8 @@ block content
               p 哈尔滨伯爵大酒店
             .flex.h-16
             .flex
-              button.rounded-lg.border.border-black.px-4.py-1 我要报名
+              a(href="https://wx.duohui.co/event/8858")
+                button.rounded-lg.border.border-black.px-4.py-1 我要报名
   div(class="hidden sm:hidden md:hidden lg:block xl:block")
     div(style="background-color:#D7D7D7; background-image: url(images/bg-img.png);background-size: 40%" class="bg-no-repeat h-screen bg-right-bottom")
       div(class="h-16 px-1 sm:px-1 md:px-1 lg:px-16 xl:px-16" style="background:rgba(37, 37, 37 ,0.95); ")
@@ -35,9 +36,9 @@ block content
             .flex.text-2xl.text-white 新昼·NEW DAWN
             div(class="flex")
               a(href="/" class="m-1 px-5 py-2 hover:bg-white hover:text-black") 首页
-              a(href="/" class="m-1 px-5 py-2 hover:bg-white hover:text-black") 新闻
-              a(href="/" class="m-1 px-5 py-2 hover:bg-white hover:text-black") 关于
-              a(href="/" class="m-1 px-5 py-2 hover:bg-white hover:text-black border-b  border-white") 了解详情
+              a(href="https://weibo.com/7225229817" class="m-1 px-5 py-2 hover:bg-white hover:text-black") 微博
+              a(href="https://weibo.com/7225229817/about" class="m-1 px-5 py-2 hover:bg-white hover:text-black") 关于
+              a(href="https://weibo.com/7225229817/IaBDMtaWr?from=page_1006067225229817_profile&wvr=6&mod=weibotime&type=comment#_rnd1570632397262" class="m-1 px-5 py-2 hover:bg-white hover:text-black border-b  border-white") 了解详情
       div(class="px-10 py-16" style="height: 20%;")
       div(class="mx-1 sm:mx-1 md:mx-1 lg:mx-16 xl:mx-16")
         div(class="w-full h-30 max-w-6xl mx-auto ")
@@ -50,6 +51,7 @@ block content
               p.text-3xl 哈尔滨伯爵大酒店
             div(class="flex h-24 sm:h-16 md:h-16 lg:h-16 xl:h-24" )
             .flex
-              button(class="rounded border border-black px-10 py-2 text-xl hover:bg-black hover:text-white") 我要报名
+              a(href="https://wx.duohui.co/event/8858")
+                button(class="rounded border border-black px-10 py-2 text-xl hover:bg-black hover:text-white") 我要报名
             .flex.h-10
             .flex 了解更多内容请转至 Lolita 茶话会 公式站
